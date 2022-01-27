@@ -1,6 +1,6 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-import Login from './pages/Login'
+import Signin from './pages/Signin'
 import Register from './pages/Register'
 import Table from './pages/Table'
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' exact element={<Login />}/>
+        <Route path='/' exact element={<Signin />}/>
         <Route path='/register' element={<Register />}/>
         <Route path='/table' element={<Table />}/>
       </Routes>

@@ -6,7 +6,7 @@ import '../style/main.css'
 
 import api from '../services/api'
 
-export default function Login() {
+export default function Signin() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 

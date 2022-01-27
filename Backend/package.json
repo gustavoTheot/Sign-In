@@ -1,5 +1,5 @@
 {
-  "name": "Backend",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "src/server.js",
@@ -13,6 +13,10 @@
     "express": "^4.17.2"
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "jsonwebtoken": "^8.5.1",
     "knex": "^0.95.15",
     "pg": "^8.7.1"
   }

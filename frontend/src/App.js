@@ -1,23 +1,22 @@
-import api from './services/api'
-import { useState, useEffect } from 'react';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+
+import Login from './pages/Login'
+import Register from './pages/Register'
+import Table from './pages/Table'
+
+//import {AuthProvider} from "./context/auth";
 
 function App() {
-  
-
-  useEffect(() =>{
-
-  })
-
   return (
-    <div className="App">
-        <form action="">
-          <input type="text" name="username" id="username" placeholder="Username"/>
-          <input type="password" name="password" id="password" placeholder="Password"/>
-
-          <button type="Sumbit">Ok</button>
-        </form>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' exact element={<Login />}/>
+        <Route path='/register' element={<Register />}/>
+        <Route path='/table' element={<Table />}/>
+      </Routes>
+    </BrowserRouter>
   );
+
 }
 
 export default App;

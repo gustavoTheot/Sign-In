@@ -1,0 +1,77 @@
+$primary-color: #151515;
+$second-color: #05BE4F;
+$thrid-color: #C4C4C4;
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: $primary-color;
+}
+
+.login, .register{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    form{
+        width: 400px;
+        height: 400px;
+        background-color: #232624;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        input{
+            width: 340px;
+            height: 30px;
+
+            border: none;
+            border-radius: 4px;
+            
+            padding: 10px;
+            margin: 10px 0 10px 0;
+
+            font-size: 13px;
+            background-color: $primary-color;
+            color: #C4C4C4;
+        }
+
+        button{
+            width: 360px;
+            height: 50px;
+
+            margin-top: 20px;
+
+            font-weight: 700;
+            color: white;
+            background-color: $second-color;
+
+            border: none;
+            border-radius: 8px;
+
+            transition-timing-function: ease;
+            transition-duration: 1s;
+
+
+            &:hover{
+                background-color: #058d3b;
+            }
+        }
+    }
+
+    .register-user{
+        margin-top: 20px;
+        a{
+            text-decoration: none;
+            color: $thrid-color;
+        }
+    }
+}
